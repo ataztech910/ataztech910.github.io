@@ -1,9 +1,16 @@
 --- 
-layout: base-layout.njk 
+layout: base-layout.njk
+data: posts
 --- 
-<div>  
-    <img src="/img/logo.png">
-</div>
 <div class="aboutDiv">
-    This is my special place on the big World Wide Web
+    <h1>{{ posts[0]['result']['title'] }}</h1>
+    <img src="{{ posts[0]['result']['image_url'] }}" />
+    <div>
+        <small>
+            {{ posts[0]['result']['content'][0]['children'][1]['children'][0] }}
+        </small>
+    </div>
+    <p>
+        {{ posts[0]['result']['description'] }}
+    </p>
 </div>
