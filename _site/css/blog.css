@@ -43,6 +43,16 @@ h3 {
 .brand-tagline {
     margin: 0;
 }
+.brand-tagline {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.brand-tagline img {
+    width: 10%;
+    display: block;
+    margin-left: 1rem;
+}
 .brand-title {
     text-transform: uppercase;
 }
