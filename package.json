@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx @11ty/eleventy && firebase deploy",
+    "build": "npx @11ty/eleventy",
+    "build-prod": "npx @11ty/eleventy && firebase deploy",
     "serve": "npx @11ty/eleventy --serve"
   },
   "keywords": [],
